@@ -1,0 +1,11 @@
+{
+  "command":"play,pause,stop,playSongs",
+  "data":{
+    "song":"songNum",
+    "songs":[
+      "song1",
+      "song2",
+      "song3"
+    ]
+  }
+}
