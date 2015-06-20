@@ -1,0 +1,22 @@
+.DS_Store
+.classpath
+.project
+bin/
+
+build/
+.externalToolBuilders/
+dist/
+out/
+test/
+linux-service
+map_server/config.xml
+
+#IntelliJ project files
+.idea/
+*.iml
+/web_servlet/nbproject/private/
+
+# Netbeans project files
+**/nbproject/**
+nb-build.xml
+web_servlet/lib
