@@ -1,8 +1,10 @@
 package MusicPlayerNode;
 
+import com.sun.jna.NativeLibrary;
 import uk.co.caprica.vlcj.component.AudioMediaPlayerComponent;
 import uk.co.caprica.vlcj.discovery.NativeDiscovery;
 import uk.co.caprica.vlcj.player.MediaPlayer;
+import uk.co.caprica.vlcj.runtime.RuntimeUtil;
 
 import java.util.List;
 
@@ -15,7 +17,8 @@ public class MusicPlayer {
     private int position;
 
     public MusicPlayer() {
-        new NativeDiscovery().discover();
+        //new NativeDiscovery().discover();
+        NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(), "/usr/lib/vlc");
         playerComponent = new AudioMediaPlayerComponent();
         player = playerComponent.getMediaPlayer();
     }
